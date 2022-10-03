@@ -1,6 +1,147 @@
+/* Setting Global Data Arrays 
+
+In future, these will be more efficiently organized within their own file/db
+
+*/
+
 const affirmationWords = ["capable", "beautiful", "worthy", "passionate", "loved", "gorgeous", "amazing"];
-const reminders = ["Take a break and do some chores, working too long on one thing is procrastinating on others. You are allowed to work on a healthy pace.", "Be kind to yourself. You are not forever bound to the things you dislike about yourself, and you can always make efforts to be better.", "Stop catastrophe-worrying, you are likely overthinking. Breathe, and push through.", "Mistakes are human, and so are you. Embrace them and keep trying to improve.", "Don't mistake procrastination for time management. Examine your reasons for putting something off to see if you're just avoiding it.", "People are not attacking you when they criticize or question you. Afford others the benefit of the doubt and assume benevolence."];
-const jokeStructures = [];
-const jokeNouns = [];
-const jokeAdjectives = [];
-const jokeVerbs = [];
+const reminders = ["Take a break and do some chores, working too long on one thing is procrastinating on others. You are allowed to work at a healthy pace.", "Be kind to yourself. You are not forever bound to the things you dislike about yourself today, and you can always make efforts to be better.", "Stop catastrophe-worrying, you are likely overthinking. Breathe, and push through.", "Mistakes are human, and so are you. Embrace them and keep trying to improve.", "Don't mistake procrastination for time management. Examine your reasons for putting something off to see if you're just avoiding it.", "People are not attacking you when they criticize or question you. Afford others the benefit of the doubt and assume benevolence."];
+const noun = [{
+    singular: "butt",
+    plural: "butts"
+},{
+    singular: "apple",
+    plural: "apples"
+},{
+    singular: "salad",
+    plural: "salads"
+},{
+    singular: "puppy",
+    plural: "puppies"
+},{
+    singular: "sandwich",
+    plural: "sandwiches"
+}];
+const adj = [{
+    solo: "beautiful",
+    an: "a beautiful"
+}, {
+    solo: "solid",
+    an: "a solid"
+},{
+    solo: "grungy",
+    an: "a grungy"
+}, {
+    solo: "organic",
+    an: "an organic"
+}, {
+    solo: "honest",
+    an: "an honest"
+}];
+const verb = ["kiss", "post on Insta", "collect", "organize", "change", "hug", "buy from Amazon"];
+const jokeAuthors = [{
+    first: "Albert",
+    last: "Einstein"
+}, {
+    first: "Friedrich",
+    last: "Nietzsche"
+},{
+    first: "William",
+    last: "Shakespeare"
+},{
+    first: "Betty",
+    last: "White"
+},{
+    first: "Justin",
+    last: "Timberlake"
+},{
+    first: "Mark",
+    last: "Twain"
+}];
+
+const jokeTypes = ["You must be the #noun_singular you wish to #verb in the world.", "You miss 100% of the #noun_plural you don't #verb.", "The #noun_singular is #adj_an thing to #verb.", "I #verb, therefore I am.", "Life is ten percent #noun_singular and ninety percent #noun_singular."];
+
+/* Functions */
+
+const getAffirm = (num) => {
+    let affirmations = [];
+    for (let x = 1; x <= num; x++){
+        let i = Math.floor(Math.random()*affirmationWords.length);
+        while (affirmations.includes(affirmationWords[i])){
+            i = Math.floor(Math.random()*affirmationWords.length);
+        }
+        affirmations.push(affirmationWords[i]);
+    }
+    return affirmations;
+}
+
+const getReminder = () => {
+    let rem = Math.floor(Math.random()*reminders.length);
+    return reminders[rem];
+}
+
+const getJokeType = () => {
+    let joke = Math.floor(Math.random()*jokeTypes.length);
+    return jokeTypes[joke];
+}
+
+const getNoun = () => {
+    let n = Math.floor(Math.random()*noun.length);
+    return noun[n];
+}
+
+const getAdj = () => {
+    let a = Math.floor(Math.random()*adj.length);
+    return adj[a];
+}
+
+const getVerb = () => {
+    let v = Math.floor(Math.random()*verb.length);
+    return verb[v];
+}
+
+const getName = () => {
+    let given = Math.floor(Math.random()*jokeAuthors.length);
+    let sur = Math.floor(Math.random()*jokeAuthors.length);
+    return `-${jokeAuthors[given].first} ${jokeAuthors[sur].last}`;
+}
+
+const processJoke = () => {
+    let jQuote = getJokeType();
+    jQuote = jQuote.split(' ');
+    let jMap = jQuote.map(e => processWord(e));
+    jQuote = jMap.join(' ');
+    console.log('"' + jQuote + '"' + getName());
+}
+
+const processWord = (word) => {
+    word = word.replace('#noun_singular', getNoun().singular);
+    word = word.replace('#noun_plural', getNoun().plural);
+    word = word.replace('#adj_solo', getAdj().solo);
+    word = word.replace('#adj_an', getAdj().an);
+    word = word.replace('#verb', getVerb());
+    return word;
+}
+
+/* Testing */
+console.log(getAffirm(3));
+console.log(getAffirm(3));
+console.log(getAffirm(3));
+console.log(getAffirm(3));
+console.log(getReminder());
+console.log(getReminder());
+console.log(getReminder());
+console.log(getReminder());
+processJoke();
+
+
+/* Dead Codeyard  - Code that I don't want to write over again but am not currently using.
+
+jQuote = jQuote.replace('#noun_singular', getNoun().singular);
+    jQuote = jQuote.replace('#noun_plural', getNoun().plural);
+    jQuote = jQuote.replace('#adj_solo', getAdj().solo);
+    jQuote = jQuote.replace('#adj_an', getAdj().an);
+    jQuote = jQuote.replace('#verb', getVerb());
+
+
+*/
