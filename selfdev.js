@@ -111,7 +111,7 @@ const processJoke = () => {
     jQuote = jQuote.split(' ');
     let jMap = jQuote.map(e => processWord(e));
     jQuote = jMap.join(' ');
-    console.log('"' + jQuote + '"' + getName());
+    return jQuote;
 }
 
 const processWord = (word) => {
@@ -123,25 +123,28 @@ const processWord = (word) => {
     return word;
 }
 
-/* Testing */
-console.log(getAffirm(3));
-console.log(getAffirm(3));
-console.log(getAffirm(3));
-console.log(getAffirm(3));
-console.log(getReminder());
-console.log(getReminder());
-console.log(getReminder());
-console.log(getReminder());
-processJoke();
+/* Intial Page Setup */
 
+const getAffirmationContent = () => {
+    let aff = document.getElementById("affirmation");
+    let affArray = getAffirm(3);
+    console.log(aff);
+    aff.innerText = `I am ${affArray[0]}, ${affArray[1]}, and ${affArray[2]}!`;
+}
 
-/* Dead Codeyard  - Code that I don't want to write over again but am not currently using.
+const getReminderContent = () => {
+    let rem = document.getElementById("reminder");
+    rem.innerText = getReminder();
+}
 
-jQuote = jQuote.replace('#noun_singular', getNoun().singular);
-    jQuote = jQuote.replace('#noun_plural', getNoun().plural);
-    jQuote = jQuote.replace('#adj_solo', getAdj().solo);
-    jQuote = jQuote.replace('#adj_an', getAdj().an);
-    jQuote = jQuote.replace('#verb', getVerb());
+const getJokeContent = () => {
+    let jok = document.getElementById("jokequote");
+    jok.innerText = '"' + processJoke() + '"';
+    let auth = document.getElementById("jokeauthor");
+    auth.innerText = getName();
+}
 
+getAffirmationContent();
+getReminderContent();
+getJokeContent();
 
-*/
