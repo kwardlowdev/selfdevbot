@@ -10,6 +10,24 @@ h1 {
     font-size: 4rem;
 }
 
+a::before {
+    content: "[";
+}
+
+a::after {
+    content: "]";
+}
+
+a:link, a:visited {
+    color: #AABA9E;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color:#c0ff90;
+    text-decoration: underline;
+}
+
 h1, h2, h3 {
     text-align: center;
     margin: 0;
@@ -59,4 +77,10 @@ h2 {
 #jokeauthor {
     text-align: center;
     font-style: italic;
+}
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
 }
