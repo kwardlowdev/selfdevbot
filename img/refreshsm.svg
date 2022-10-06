@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="101.15068mm"
+   height="118.61682mm"
+   viewBox="0 0 101.15067 118.61684"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient1012">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop1010" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient861">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop859" />
+    </linearGradient>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-41.406145,-35.888036)">
+    <path
+       id="rect7811"
+       style="fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:fill markers stroke"
+       d="m 133.59146,39.823159 -0.032,0.0217 -2.76935,5.99085 h -26.47797 l 0.006,-0.01292 H 83.177486 L 48.502089,120.83113 h 21.14031 L 94.539071,66.976025 h 26.477959 l -2.85356,6.17275 0.0119,0.0217 24.38146,-16.673401 z" />
+    <path
+       id="rect7811-3-5"
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:0.465;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 45.059645,117.27422 21.17029,-0.0646 24.730789,-53.855135 26.515716,-0.0811 -2.83446,6.17276 0.0119,0.0217 24.35356,-16.72456 -9.04028,-16.62276 -0.0315,0.0217 -2.75126,5.99084 -26.51569,0.0811 0.006,-0.0129 -21.170295,0.0651 z" />
+    <path
+       id="rect7811-3"
+       style="fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:0.264583;paint-order:fill markers stroke"
+       d="m 54.363785,154.50486 0.032,-0.0217 2.76935,-5.99084 h 26.477968 l -0.006,0.0129 H 104.77775 L 139.45316,73.496889 H 118.31285 L 93.416173,127.35199 H 66.938215 l 2.853558,-6.17275 -0.0119,-0.0217 -24.381458,16.6734 z" />
+    <path
+       id="rect7811-3-5-5"
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:0.465;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 135.65832,69.770017 -21.17029,0.0646 -24.7308,53.855133 -26.515713,0.0811 2.83446,-6.17276 -0.0119,-0.0217 -24.35356,16.72456 9.04028,16.62276 0.0315,-0.0217 2.75126,-5.99084 26.515693,-0.0811 -0.006,0.0129 21.1703,-0.0651 z" />
+  </g>
+</svg>

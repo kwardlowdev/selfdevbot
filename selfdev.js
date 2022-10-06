@@ -147,4 +147,3 @@ const getJokeContent = () => {
 getAffirmationContent();
 getReminderContent();
 getJokeContent();
-

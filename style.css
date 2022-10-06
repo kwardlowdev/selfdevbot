@@ -44,6 +44,14 @@ body {
 
 /* Content Box Styles */
 
+.refresher {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-left: 1rem;
+    float: right;
+    cursor: pointer;
+}
+
 h2 {
     font-size: 2.5rem;
 }
