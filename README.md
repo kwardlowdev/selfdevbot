@@ -9,6 +9,7 @@
 + Randomized set of affirmation words.
 + Randomized reminder for those of us who deal with anxiety and stress.
 + Randomized joke quote with random attribution.
++ Individual section randomizers.
 
 
 ## Scope & Potential Future
@@ -20,7 +21,6 @@
  + On-site ability to interact with and manipulate the available data for messages.
  + User-specific data sets.
  + Inspirational Joke Poster Generation.
- + Individual section randomizers.
  + More responsiveness in the design.
 
 ### Contact
