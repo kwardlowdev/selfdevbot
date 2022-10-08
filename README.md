@@ -24,9 +24,5 @@
 
 
 ### Contact
-Kyle Wardlow
-email: kyle@kylewardlow.com
-
-github: https://github.com/kwardlowdev
-
-codecademy: https://www.codecademy.com/profiles/KWardlow
+Kyle Wardlow  
+[E-mail](mailto:kyle@kylewardlow.com) - [Github](https://github.com/kwardlowdev) - [LinkedIn](https://www.linkedin.com/in/kwardlow/) - [Codecademy](https://www.codecademy.com/profiles/KWardlow)
