@@ -21,7 +21,7 @@
  + On-site ability to interact with and manipulate the available data for messages.
  + User-specific data sets.
  + Inspirational Joke Poster Generation.
- + More responsiveness in the design.
+
 
 ### Contact
 Kyle Wardlow

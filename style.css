@@ -53,15 +53,18 @@ body {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px #0B3142;
 }
+
 .content-box {
     border: 3px solid #AED1FF;
     background-color: #20546d;
     border-radius: 25px;
     width: 60%;
     margin: 1rem auto;
-    padding: 2%;
+    padding: .5rem;
 }
 
 #affirmation {
@@ -70,9 +73,17 @@ h2 {
 }
 
 #reminder {
-    padding: 0 10%;
+    margin: 1rem 10%;
+    padding-left: .5rem;
     font-size: 1.5rem;
+    text-align: left;
+    border-left: 2px outset #AABA9E;
+    letter-spacing: 1px;
+}
 
+#reminder::first-letter {
+    font-weight: bold;
+    font-size: 1.75rem;
 }
 
 #jokequote {
@@ -91,4 +102,37 @@ h2 {
 
 footer {
     text-align: center;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1250px) {
+    .content-box {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 16px;
+    }
+    .content-box {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    html {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    .refresher {
+        margin-top: .5rem;
+        margin-right: .5rem;
+    }
+    .content-box {
+        width: 95%;
+    }
 }
