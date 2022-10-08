@@ -4,8 +4,8 @@ In future, these will be more efficiently organized within their own file/db
 
 */
 
-const affirmationWords = ["capable", "beautiful", "worthy", "passionate", "loved", "gorgeous", "amazing"];
-const reminders = ["Take a break and do some chores, working too long on one thing is procrastinating on others. You are allowed to work at a healthy pace.", "Be kind to yourself. You are not forever bound to the things you dislike about yourself today, and you can always make efforts to be better.", "Stop catastrophe-worrying, you are likely overthinking. Breathe, and push through.", "Mistakes are human, and so are you. Embrace them and keep trying to improve.", "Don't mistake procrastination for time management. Examine your reasons for putting something off to see if you're just avoiding it.", "People are not attacking you when they criticize or question you. Afford others the benefit of the doubt and assume benevolence."];
+const affirmationWords = ["capable", "beautiful", "worthy", "passionate", "loved", "gorgeous", "amazing", "determined", "valuable", "unique", "valid", "human"];
+const reminders = ["Take a break and do some chores, working too long on one thing is procrastinating on others. You are allowed to work at a healthy pace.", "Be kind to yourself. You are not forever bound to the things you dislike about yourself today, and you can always make efforts to be better.", "Stop catastrophe-worrying, you are likely overthinking. Breathe, and push through.", "Mistakes are human, and so are you. Embrace them and keep trying to improve.", "Don't mistake procrastination for time management. Examine your reasons for putting something off to see if you're just avoiding it.", "People are not attacking you when they criticize or question you. Afford others the benefit of the doubt and assume benevolence.", "Not everything will be perfect from the beginning. Embrace the journey and love your ability to improve everything you make.", "Every error is a doorway to gaining knowledge.", "There is no hardship, trial, or failing that you are alone in experiencing, and there is always a path out that others have walked before."];
 const noun = [{
     singular: "butt",
     plural: "butts"
@@ -38,7 +38,7 @@ const adj = [{
     solo: "honest",
     an: "an honest"
 }];
-const verb = ["kiss", "post on Insta", "collect", "organize", "change", "hug", "buy from Amazon"];
+const verb = ["kiss", "post on Insta", "collect", "organize", "change", "hug", "buy from Amazon", "eat"];
 const jokeAuthors = [{
     first: "Albert",
     last: "Einstein"
@@ -123,7 +123,7 @@ const processWord = (word) => {
     return word;
 }
 
-/* Intial Page Setup */
+/* Refresher Functions */
 
 const getAffirmationContent = () => {
     let aff = document.getElementById("affirmation");
@@ -143,6 +143,9 @@ const getJokeContent = () => {
     let auth = document.getElementById("jokeauthor");
     auth.innerText = getName();
 }
+
+
+/* Intial Page Setup */
 
 getAffirmationContent();
 getReminderContent();
