@@ -3,7 +3,7 @@
 html {
     font-size: 18px;
     font-family: Helvetica, sans-serif;
-    color: #AABA9E;
+    color: #cae9b4;
 }
 
 h1 {
@@ -19,7 +19,7 @@ a::after {
 }
 
 a:link, a:visited {
-    color: #AABA9E;
+    color: #cae9b4;
     text-decoration: none;
 }
 
@@ -94,6 +94,7 @@ h2 {
 }
 
 #jokeauthor {
+    color: #FFFFFF;
     text-align: center;
     font-style: italic;
 }
